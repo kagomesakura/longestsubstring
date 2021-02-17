@@ -7,12 +7,12 @@ s = 'abcbcd'
 longest = ''
 
 for i in range(0, len(s)):
-    temp = s[i]
+    string = s[i]
     key = i
     while key + 1 < len(s) and ord(s[key]) <= ord(s[key+1]):
-        temp += s[key+1]
+        string += s[key+1]
         key += 1
-    if len(temp) > len(longest):
-        longest = temp
+    if len(string) > len(longest):
+        longest = string
 
 print("Longest substring in alphabetical order is: ", longest)
